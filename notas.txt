@@ -1,0 +1,26 @@
+Validaciones front
+Listeners
+Eventos
+Selectores
+
+Validaciones:
+    Confirmación de datos
+    Front -> Represetación gráfica
+        Expresiones regulares
+    Back -> Rrepresentación lógica
+    Datos -> Represetnación de base de datos
+
+map -> metodo que recorre un arreglo y retorna un nuevo arreglo
+forEach -> metodo que recorre un arreglo
+for of -> metodo que recorre un arreglo
+
+
+Funcion anonima
+    Una función sin nombre que solo se ejecuta donde se define
+    function(){}
+    ()=>{}
+
+
+Eventos
+    Usuario
+    Documento
