@@ -83,6 +83,12 @@ function cerrandoSesion() {
   document.getElementById("login").style.display = "block";
   document.getElementById("panel").style.display = "none";
 }
+
+let listar = document.getElementById('listar')
+listar.addEventListener('click', listarCosas)
+function listarCosas(){
+  console.log('Listando elementos de la base de datos')
+}
 // let numeros = [1,2,3,4]
 // let letras = ['A','B','C']
 // let suma = [...numeros,...letras]
