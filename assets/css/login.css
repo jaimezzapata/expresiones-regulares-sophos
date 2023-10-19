@@ -97,7 +97,30 @@ body {
 .panel aside{
   width: 20%;
   height: 100vh;
-  background-color: orange;
+  background-image: url('../img/bg.png');
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenido{
+  background-color: white;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-evenly;
+  height: 70%;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu button {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
 }
 
 .panel div{
