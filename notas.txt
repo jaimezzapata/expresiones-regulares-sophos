@@ -14,13 +14,18 @@ map -> metodo que recorre un arreglo y retorna un nuevo arreglo
 forEach -> metodo que recorre un arreglo
 for of -> metodo que recorre un arreglo
 
-
 Funcion anonima
     Una función sin nombre que solo se ejecuta donde se define
     function(){}
     ()=>{}
 
-
 Eventos
     Usuario
     Documento
+
+    flecha ->
+    regular ->
+    anonima ->
+
+    callback
+        setTimeout

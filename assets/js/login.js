@@ -64,8 +64,14 @@ function iniciarSesion() {
   let contrasena = document.getElementById("contrasena").value;
   let correo = document.getElementById("correo").value;
   if (usuario == "Jaime") {
-    document.getElementById("login").style.display = "none";
-    document.getElementById("panel").style.display = "flex";
+    setTimeout(function(){
+      document.getElementById('bienvenide').style.display = 'flex'
+    },1000)
+    setTimeout(() => {
+      document.getElementById("login").style.display = "none";
+      document.getElementById("panel").style.display = "flex";
+      document.getElementById('bienvenide').style.display = 'none'
+    }, 3000);
   } else {
     alert("Error de credenciales");
   }
@@ -81,3 +87,14 @@ function cerrandoSesion() {
 // let letras = ['A','B','C']
 // let suma = [...numeros,...letras]
 // console.log(suma)
+
+// let funcionUno = () => {
+//   console.log('Esto es la primera funcion')
+// }
+
+// function funcionDos(callback){
+//   console.log('Esto es la segunda funcion')
+//   callback()
+// }
+
+// funcionDos(funcionUno)
