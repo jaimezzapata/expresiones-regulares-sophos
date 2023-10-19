@@ -56,6 +56,27 @@ function validarCampos(e) {
   }
 }
 
+// let btnIniciar = document.getElementById('btnIniciar')
+let btnIniciar = document.querySelector("#btnIniciar");
+btnIniciar.addEventListener("click", iniciarSesion);
+function iniciarSesion() {
+  let usuario = document.getElementById("usuario").value;
+  let contrasena = document.getElementById("contrasena").value;
+  let correo = document.getElementById("correo").value;
+  if (usuario == "Jaime") {
+    document.getElementById("login").style.display = "none";
+    document.getElementById("panel").style.display = "flex";
+  } else {
+    alert("Error de credenciales");
+  }
+}
+
+let cerrarSesion = document.getElementById("cerrarSesion");
+cerrarSesion.addEventListener("click", cerrandoSesion);
+function cerrandoSesion() {
+  document.getElementById("login").style.display = "block";
+  document.getElementById("panel").style.display = "none";
+}
 // let numeros = [1,2,3,4]
 // let letras = ['A','B','C']
 // let suma = [...numeros,...letras]
