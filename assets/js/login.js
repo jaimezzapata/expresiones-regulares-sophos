@@ -28,10 +28,30 @@ function validarCampos(e) {
       }
       break;
     case "contrasena":
-      console.log("Este es la contrasena");
+      if (contrasena.test(e.target.value)) {
+        console.log("Cumple con la expresion");
+        // document.getElementById('usuario').style.backgroundColor = 'green'
+        document.getElementById('contrasena').classList.add('correcto')
+        document.getElementById('contrasena').classList.remove('incorrecto')
+      } else {
+        console.log("No cumple con la expresion");
+        // document.getElementById('usuario').style.backgroundColor = 'red'
+        document.getElementById('contrasena').classList.add('incorrecto')
+        document.getElementById('contrasena').classList.remove('correcto')
+      }
       break;
     case "correo":
-      console.log("Este es el correo");
+      if (correo.test(e.target.value)) {
+        console.log("Cumple con la expresion");
+        // document.getElementById('usuario').style.backgroundColor = 'green'
+        document.getElementById('correo').classList.add('correcto')
+        document.getElementById('correo').classList.remove('incorrecto')
+      } else {
+        console.log("No cumple con la expresion");
+        // document.getElementById('usuario').style.backgroundColor = 'red'
+        document.getElementById('correo').classList.add('incorrecto')
+        document.getElementById('correo').classList.remove('correcto')
+      }
       break;
   }
 }
