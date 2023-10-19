@@ -79,10 +79,10 @@ body {
   text-decoration: underline;
 }
 
-.correcto{
+.correcto {
   border: solid 1px green;
 }
 
-.incorrecto{
+.incorrecto {
   border: solid 1px red;
 }
