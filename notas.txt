@@ -29,3 +29,32 @@ Eventos
 
     callback
         setTimeout
+
+
+MVC - Arquitectura
+
+    Model - View - Controller
+    Models - Views - Controllers
+    Modelo - Vista - Controlador
+    Modelos - Vistas - Controladores
+
+    Laravel, Codelgniter, Springboot, React
+        Lógica de programación
+        Lógica gráfica
+        Lógica información (bases de datos)
+
+M -> Bases de datos (infornacion)
+    Conexión a base de datos (cadena de Conexión, tablas, modelo no relacion, etc)
+V -> Gráfico o UX/UI (Front)
+    HTML, CSS, JS
+C -> Lógico  (Back)
+    Funciones logicas, validaciones de elementos, CRUD
+
+
+Hexagonal, SOLID, etc.
+
+aseets
+    img
+    css
+    js
+index
