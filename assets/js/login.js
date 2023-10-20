@@ -83,11 +83,28 @@ function cerrandoSesion() {
   document.getElementById("panel").style.display = "none";
 }
 
-let listar = document.getElementById('listar')
-listar.addEventListener('click', listarCosas)
-function listarCosas(){
-  console.log('Listando elementos de la base de datos')
+let listar = document.querySelector("#listar");
+listar.addEventListener("click", listarCosas);
+function listarCosas() {
+  document.getElementById("sectionListar").style.zIndex = "3";
+  document.getElementById("sectionBuscar").style.zIndex = "2";
+  document.getElementById("sectionFiltrar").style.zIndex = "2";
 }
+let buscar = document.querySelector("#buscar");
+buscar.addEventListener("click", buscarCosas);
+function buscarCosas() {
+  document.getElementById("sectionListar").style.zIndex = "2";
+  document.getElementById("sectionBuscar").style.zIndex = "3";
+  document.getElementById("sectionFiltrar").style.zIndex = "2";
+}
+let filtrar = document.querySelector("#filtrar");
+filtrar.addEventListener("click", filtrarCosas);
+function filtrarCosas() {
+  document.getElementById("sectionListar").style.zIndex = "2";
+  document.getElementById("sectionBuscar").style.zIndex = "2";
+  document.getElementById("sectionFiltrar").style.zIndex = "3";
+}
+
 // let numeros = [1,2,3,4]
 // let letras = ['A','B','C']
 // let suma = [...numeros,...letras]
