@@ -103,7 +103,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
+
 .contenido{
   background-color: white;
 }
@@ -142,3 +146,12 @@ body {
   color: white;
   border-radius: 100px
 } 
+
+.contenido section{
+  width: 80%;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

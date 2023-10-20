@@ -7,7 +7,6 @@ let inputs = document.querySelectorAll("input");
 inputs.forEach((input) => {
   input.addEventListener("keyup", validarCampos);
 });
-
 function validarCampos(e) {
   // if(e.target.value == 'f'){
   //     console.log('Holi...')
