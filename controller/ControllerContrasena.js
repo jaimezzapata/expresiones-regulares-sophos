@@ -61,6 +61,16 @@ function buscarCosas() {
   document.getElementById("sectionListar").style.zIndex = "2";
   document.getElementById("sectionBuscar").style.zIndex = "3";
   document.getElementById("sectionFiltrar").style.zIndex = "2";
+  let btnBuscar = document.getElementById('btnBuscar')
+  btnBuscar.addEventListener('click', ()=> {
+    let buscarItem = document.getElementById('buscarItem').value
+    contrasenas.find((contrasena)=>{
+        if(buscarItem == contrasena.sitioWeb){
+            console.log(contrasena)
+        }
+    })
+  })
+
 }
 let filtrar = document.querySelector("#filtrar");
 filtrar.addEventListener("click", filtrarCosas);
