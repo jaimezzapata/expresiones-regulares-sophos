@@ -27,6 +27,13 @@ export let contrasenas = [
         usuario: 'UsuarioHbo',
         descripcion: 'Sitio de entretenimiento para ver peluculas bajo demanda'
     },
+    {
+        sitioWeb: 'Crunchy',
+        urlWeb: 'https://www.crunchyroll.com/es',
+        password: 'ContraseñaCrunchy',
+        usuario: 'UsuarioCrunchy',
+        descripcion: 'Sitio de entretenimiento para ver peluculas bajo demanda'
+    },
 ]
 // export {
 //     contrasenas

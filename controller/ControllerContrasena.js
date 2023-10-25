@@ -33,8 +33,26 @@ function listarCosas() {
   document.getElementById("sectionListar").style.zIndex = "3";
   document.getElementById("sectionBuscar").style.zIndex = "2";
   document.getElementById("sectionFiltrar").style.zIndex = "2";
-  console.log(contrasenas);
+  contrasenas.map((contrasena) => {
+    let sectionListar = document.getElementById('sectionListar')
+    let card = document.createElement("article");
+    let nombre = document.createElement("h1");
+    let url = document.createElement("a");
+    let usuario = document.createElement("p");
+    let contarsena = document.createElement("p");
+    let descripcion = document.createElement("p");
+    nombre.textContent = contrasena.sitioWeb
+    url.textContent = contrasena.sitioWeb
+    url.href = contrasena.urlWeb
+    usuario.textContent = contrasena.usuario
+    contarsena.textContent = contrasena.password
+    descripcion.textContent = contrasena.descripcion
+    card.append(nombre,url,usuario,contarsena,descripcion)
+    console.log(card)
+    sectionListar.append(card)
+  });
 }
+
 let buscar = document.querySelector("#buscar");
 buscar.addEventListener("click", buscarCosas);
 function buscarCosas() {
