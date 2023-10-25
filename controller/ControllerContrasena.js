@@ -44,9 +44,11 @@ function listarCosas() {
     nombre.textContent = contrasena.sitioWeb
     url.textContent = contrasena.sitioWeb
     url.href = contrasena.urlWeb
+    url.target = '_blanck'
     usuario.textContent = contrasena.usuario
     contarsena.textContent = contrasena.password
     descripcion.textContent = contrasena.descripcion
+    card.classList.add('listadoCosas')
     card.append(nombre,url,usuario,contarsena,descripcion)
     console.log(card)
     sectionListar.append(card)

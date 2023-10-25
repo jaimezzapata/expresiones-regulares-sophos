@@ -155,3 +155,17 @@ body {
   top: 0;
   right: 0;
 }
+
+#sectionListar{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listadoCosas{
+  width: 200px;
+  height: 200px;
+  background-color: #04739f;
+  margin: 10px;
+  color: white;
+  padding: 10px;
+}
