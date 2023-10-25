@@ -1,3 +1,5 @@
+import { contrasenas } from "../model/ModelContrasena.js";
+
 let btnIniciar = document.querySelector("#btnIniciar");
 btnIniciar.addEventListener("click", iniciarSesion);
 function iniciarSesion() {
@@ -31,6 +33,7 @@ function listarCosas() {
   document.getElementById("sectionListar").style.zIndex = "3";
   document.getElementById("sectionBuscar").style.zIndex = "2";
   document.getElementById("sectionFiltrar").style.zIndex = "2";
+  console.log(contrasenas);
 }
 let buscar = document.querySelector("#buscar");
 buscar.addEventListener("click", buscarCosas);

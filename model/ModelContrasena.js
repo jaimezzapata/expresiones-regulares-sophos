@@ -1,4 +1,4 @@
-let contrasenas = [
+export let contrasenas = [
     {
         sitioWeb: 'Educacion Digital',
         urlWeb: 'https://edigital.cesde.edu.co/login/index.php',
@@ -28,3 +28,6 @@ let contrasenas = [
         descripcion: 'Sitio de entretenimiento para ver peluculas bajo demanda'
     },
 ]
+// export {
+//     contrasenas
+// }
