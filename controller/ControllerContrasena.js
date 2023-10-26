@@ -30,6 +30,7 @@ function cerrandoSesion() {
 let listar = document.querySelector("#listar");
 listar.addEventListener("click", listarCosas);
 function listarCosas() {
+  document.getElementById("sectionListar").innerHTML = ''
   document.getElementById("sectionListar").style.zIndex = "3";
   document.getElementById("sectionBuscar").style.zIndex = "2";
   document.getElementById("sectionFiltrar").style.zIndex = "2";
@@ -44,7 +45,7 @@ function listarCosas() {
     nombre.textContent = contrasena.sitioWeb;
     url.textContent = contrasena.sitioWeb;
     url.href = contrasena.urlWeb;
-    url.target = "_blanck";
+    url.target = "_blank";
     usuario.textContent = contrasena.usuario;
     contarsena.textContent = contrasena.password;
     descripcion.textContent = contrasena.descripcion;
@@ -65,12 +66,28 @@ function buscarCosas() {
   btnBuscar.addEventListener("click", () => {
     let buscarItem = document.getElementById("buscarItem").value;
     contrasenas.find((contrasena) => {
-      if (buscarItem == contrasena.sitioWeb) {
-        console.log(contrasena);
+      if (buscarItem == contrasena.id) {
+        let sectionBuscar = document.getElementById("sectionBuscar");
+        let card = document.createElement("article");
+        let nombre = document.createElement("h1");
+        let url = document.createElement("a");
+        let usuario = document.createElement("p");
+        let contarsena = document.createElement("p");
+        let descripcion = document.createElement("p");
+        nombre.textContent = contrasena.sitioWeb;
+        url.textContent = contrasena.sitioWeb;
+        url.href = contrasena.urlWeb;
+        url.target = "_blank";
+        usuario.textContent = contrasena.usuario;
+        contarsena.textContent = contrasena.password;
+        descripcion.textContent = contrasena.descripcion;
+        card.classList.add("listadoCosas");
+        card.append(nombre, url, usuario, contarsena, descripcion);
+        console.log(card);
+        sectionBuscar.append(card);
       }
     });
   });
-  
 }
 let filtrar = document.querySelector("#filtrar");
 filtrar.addEventListener("click", filtrarCosas);
