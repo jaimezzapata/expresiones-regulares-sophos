@@ -42,6 +42,7 @@
           <button id="listar" href="">Listar</button>
           <button id="buscar" href="">Buscar</button>
           <button id="filtrar" href="">Filtrar</button>
+          <button id="crear">Crear</button>
           <button id="cerrarSesion" type="button">Cerrar Sesion</button>
         </nav>
       </aside>
@@ -52,11 +53,23 @@
         </section>
         <section id="sectionBuscar">
           <h1>Busqueda Cosas</h1>
-          <input placeholder="Nombre Aplicacion" id="buscarItem" type="text">
+          <input placeholder="Nombre Aplicacion" id="buscarItem" type="text" />
           <button id="btnBuscar" type="button">Buscar</button>
         </section>
         <section id="sectionFiltrar">
           <h1>Filtrado Cosas</h1>
+        </section>
+        <section id="sectionCrear">
+          <h1>Crear Cosa</h1>
+          <form action="">
+            <input id="nombreSitio" placeholder="Nombre sitio web" type="text" />
+            <input id="urlSitio" placeholder="Direccion URL" type="text" />
+            <input id="contrasenaSitio" placeholder="Contraseña" type="password" />
+            <input id="usuarioSitio" placeholder="Usuario" type="text" />
+            <input id="descripcionSitio" placeholder="Descripción" type="text" />
+            <input id="idSitio" placeholder="Id" type="number" />
+            <input id="btnCrear" type="button" value="Crear" />
+          </form>
         </section>
         <section></section>
       </div>

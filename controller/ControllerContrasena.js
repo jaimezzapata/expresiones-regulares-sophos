@@ -30,10 +30,11 @@ function cerrandoSesion() {
 let listar = document.querySelector("#listar");
 listar.addEventListener("click", listarCosas);
 function listarCosas() {
-  document.getElementById("sectionListar").innerHTML = ''
+  document.getElementById("sectionListar").innerHTML = "";
   document.getElementById("sectionListar").style.zIndex = "3";
   document.getElementById("sectionBuscar").style.zIndex = "2";
   document.getElementById("sectionFiltrar").style.zIndex = "2";
+  document.getElementById("sectionCrear").style.zIndex = "2";
   contrasenas.map((contrasena) => {
     let sectionListar = document.getElementById("sectionListar");
     let card = document.createElement("article");
@@ -62,6 +63,7 @@ function buscarCosas() {
   document.getElementById("sectionListar").style.zIndex = "2";
   document.getElementById("sectionBuscar").style.zIndex = "3";
   document.getElementById("sectionFiltrar").style.zIndex = "2";
+  document.getElementById("sectionCrear").style.zIndex = "2";
   let btnBuscar = document.getElementById("btnBuscar");
   btnBuscar.addEventListener("click", () => {
     let buscarItem = document.getElementById("buscarItem").value;
@@ -89,10 +91,32 @@ function buscarCosas() {
     });
   });
 }
+
 let filtrar = document.querySelector("#filtrar");
 filtrar.addEventListener("click", filtrarCosas);
 function filtrarCosas() {
   document.getElementById("sectionListar").style.zIndex = "2";
   document.getElementById("sectionBuscar").style.zIndex = "2";
   document.getElementById("sectionFiltrar").style.zIndex = "3";
+  document.getElementById("sectionCrear").style.zIndex = "2";
 }
+
+let crear = document.querySelector("#crear");
+crear.addEventListener("click", crearCosa);
+function crearCosa() {
+  document.getElementById("sectionListar").style.zIndex = "2";
+  document.getElementById("sectionBuscar").style.zIndex = "2";
+  document.getElementById("sectionFiltrar").style.zIndex = "2";
+  document.getElementById("sectionCrear").style.zIndex = "3";
+}
+let btnCrear = document.getElementById("btnCrear");
+btnCrear.addEventListener("click", () => {
+  let sitioWeb = document.getElementById("nombreSitio").value;
+  let urlWeb = document.getElementById("urlSitio").value;
+  let password = document.getElementById("contrasenaSitio").value;
+  let usuario = document.getElementById("usuarioSitio").value;
+  let descripcion = document.getElementById("descripcionSitio").value;
+  let id = document.getElementById("idSitio").value;
+  let contraseña = { sitioWeb, urlWeb, password, usuario, descripcion, id };
+  contrasenas.push(contraseña);
+});
